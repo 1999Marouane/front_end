@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './component_home/component_user/Header';
+import Footer from './component_home/component_user/Footer';
+import InterfaceHome from './component_home/component_user/InterfaceHome';
+import HendelSeursh from './component_home/component_user/HendelSeursh';
+// import SignUp from './component_login/SignUp';
+// import Login from './component_login/Login';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        {/* <SignUp /> */}
+        {/* <Login/> */}
+        <Header/>
+        <HendelSeursh/>
+        <InterfaceHome/>
+        <Footer/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
