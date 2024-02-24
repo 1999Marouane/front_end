@@ -1,9 +1,7 @@
 import React from 'react'
 
 const HendelSeursh = () => {
-    const style = {
-
-    }
+    
     return (
         <div className='container'>
             
