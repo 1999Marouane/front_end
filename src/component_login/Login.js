@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
-import "./Style.css";
+import "./globalStyles.css";
+import { Link } from "react-router-dom";
 
 function Login() {
+
     const initialValues = {
         username: "",
         email: "",
@@ -20,7 +22,7 @@ function Login() {
     const handleSubmit = (e) => {
         e.preventDefault();
         setFormErrors(validate(formValues));
-        setIsSubmit(true);
+        setIsSubmit(true);          
     };
 
     useEffect(() => {
@@ -106,9 +108,14 @@ function Login() {
                     </div>
                 </form>
                 <div className="text">
-                    Already have an account? <span>Sign Up</span>
+                    Already have an account? <span>  <Link to="/signUp">Sign Up</Link> </span>
                 </div>
             </div>{" "}
+
+
+
+
+        
         </>
     );
 }

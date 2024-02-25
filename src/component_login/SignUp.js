@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
-import "./Style.css";
+import "./globalStyles.css";    
+import { Link } from "react-router-dom";
 
 function SignUp() {
+    
+
+
     const initialValues = {
         username: "",
         email: "",
@@ -122,7 +126,7 @@ function SignUp() {
                     </div>
                 </form>
                 <div className="text">
-                    Already have an account? <span>Login</span>
+                    Already have an account? <span> <Link to="/login">Login</Link> </span>
                 </div>
             </div>{" "}
         </>
